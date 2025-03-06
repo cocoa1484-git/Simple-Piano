@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.piano {
+    display: flex;
+    position: relative;
+}
+
+.key {
+    width: 60px;
+    height: 200px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+
+.white-key {
+    background-color: white;
+}
+
+.black-key {
+    background-color: black;
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    margin-left: -20px;
+    z-index: 1;
+}
